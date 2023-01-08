@@ -1,0 +1,48 @@
+.box {
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    /* 是content的高度 */
+    background-color: #d6e414;
+    background-size: cover;
+    background-image: url(../images/dog.jpeg);
+     /* background-image: url(/images/dog2.jpg); */
+    text-align: center;
+     /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: justify; */
+    margin: auto;
+    /* 只是距離，要上顏色是用html的疊加 */
+    border: 2px solid red;
+    padding: 20px;
+    box-sizing: border-box;
+    word-break: break-all; 
+    /* 自動換行 */
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: aqua;
+}
+    .box2 {
+        width:100px;
+        height: 100px;
+        box-sizing: border-box;
+        border:3px solid #000;
+        background: #dedede;
+        color: red;
+        padding: 10px;
+    }
+    
+    .button {
+        /* width: 100px;
+        height: 50px;
+        line-height: 50px; */
+        background: #3564e4;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        padding:10px 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        /* 用padding去撐就好，僅限於不用考慮邊框的類型 */
+}
