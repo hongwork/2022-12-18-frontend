@@ -19,30 +19,44 @@
     word-break: break-all; 
     /* 自動換行 */
     font-family: 'East Sea Dokdo', cursive;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     color: aqua;
 }
-    .box2 {
-        width:100px;
-        height: 100px;
-        box-sizing: border-box;
-        border:3px solid #000;
-        background: #dedede;
-        color: red;
-        padding: 10px;
+.box2 {
+    width:100px;
+    height: 100px;
+    box-sizing: border-box;
+    border:3px solid #000;
+    background: #dedede;
+    color: red;
+    padding: 10px;
     }
     
-    .button {
-        /* width: 100px;
-        height: 50px;
-        line-height: 50px; */
-        background: #3564e4;
-        color: #fff;
-        display: inline-block;
-        text-align: center;
-        padding:10px 20px;
-        margin-top: 20px;
-        border-radius: 5px;
-        /* 用padding去撐就好，僅限於不用考慮邊框的類型 */
+.button {
+     /* width: 100px;
+     height: 50px;
+    line-height: 50px; */
+    background: #3564e4;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding:10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    /* 用padding去撐就好，僅限於不用考慮邊框的類型 */
+}
+
+.block{
+    background-color: #000;
+    padding-top: 10px
+    
+}
+/* block負責寬高版型，元素負責樣式 */
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #d6e414;
 }
