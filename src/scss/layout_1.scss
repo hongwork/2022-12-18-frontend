@@ -1,0 +1,119 @@
+@import 'reset';
+
+body {
+    background: #000;
+}
+
+// .container {
+//     .header {
+//         background: #fff;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 20px;
+//         border-radius: 10px;
+//         border-top-right-radius: 0;
+//         border-top-left-radius: 0;
+//     }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // flex會讓預設寬高消失
+
+    .header-content {
+        background: #fff;
+        display: flex;
+        // flex會讓預設寬高消失
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    // .header2,
+    // .header3,
+    // .header4 {
+    //     background: #fff;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+    // .header2 {
+    //     .container {
+    //         display: flex;
+    //         justify-content: space-between;
+    //         align-items: center;
+    //     }
+    // }
+
+    // .header3 {
+    //     .header-content {
+    //         display: flex;
+    //         justify-content: space-between;
+    //         align-items: center;
+    //     }
+    // }
+
+    // .header4 {
+    //     .header-content {
+    //         display: flex;
+    //         justify-content: space-between;
+    //         align-items: center;
+    //     }
+    // }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+
+        // li {
+        //     margin-right: 10px;
+
+        //     &:last-child {
+        //         margin-right: 0;
+        //     }
+        // }
+
+        li {
+            margin-left: 10px;
+            font-weight: 700;
+            text-align: center;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            // 注意外距，會影響之後要做滿版的部分
+
+            &:hover {
+                color: rgb(47, 47, 255);
+            }
+        }
+
+        .en {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.join-form {
+    min-height: 100vh;
+    color: #fff;
+    background: #000;
+    background-image: url(../images/banner.jpeg);
+    background-size: cover;
+
+    .join-form-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        // 不能用margin向下推，因為會變成多了margin的高度，用padding比較好
+    }
+}
