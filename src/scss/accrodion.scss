@@ -1,0 +1,73 @@
+@import 'reset';
+
+.accrodion {
+    margin: 20px auto;
+
+    .tab {
+        border: 1px solid rgb(25, 45, 224);
+        border-bottom-width: 0;
+
+        &:last-child {
+            border-bottom-width: 1px;
+        }
+
+        >label {
+            // 用子代選擇器就可以避免tab-content也一起調整
+            display: flex;
+            background: rgb(54, 73, 245);
+            color: #fff;
+            padding: 12px;
+            font-size: 700;
+            font-family: monospace;
+            cursor: pointer;
+            user-select: none;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+                font-size: 26px;
+            }
+
+            &:hover {
+                background-color: rgb(126, 244, 71);
+            }
+
+            .close-icon {
+                display: none;
+            }
+        }
+
+        .tab-content {
+            padding: 10px;
+            display: none;
+        }
+
+        .tab-switch:checked {
+            +label {
+                .open-icon {
+                    display: none;
+                }
+
+                .close-icon {
+                    display: block;
+                }
+            }
+
+            ~.tab-content {
+                display: block;
+            }
+        }
+
+        /**
+        *   屬性選擇器解決方案
+        **/
+        // >input[type=radio],
+        // >input[type=checkbox] {
+        //     display: none;
+        // }
+
+        .tab-switch {
+            display: none;
+        }
+    }
+}
