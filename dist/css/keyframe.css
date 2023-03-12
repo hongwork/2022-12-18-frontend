@@ -118,4 +118,29 @@ a {
 .form-control-item .form-control-append .button {
   height: 100%;
   display: inline-block;
-}/*# sourceMappingURL=reset_layout.css.map */
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.block.active {
+  animation-name: move;
+  animation-duration: 3s;
+  transform: translate(80%);
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(80%);
+  }
+}/*# sourceMappingURL=keyframe.css.map */

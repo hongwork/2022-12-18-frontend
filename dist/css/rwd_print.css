@@ -118,4 +118,55 @@ a {
 .form-control-item .form-control-append .button {
   height: 100%;
   display: inline-block;
-}/*# sourceMappingURL=reset_layout.css.map */
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin: 15px auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.student-table th,
+.student-table td {
+  border: 1px solid #dedede;
+  padding: 10px;
+}
+.student-table th {
+  background: #dedede;
+}
+.student-table tr td:last-child {
+  text-align: right;
+}
+.student-table tr:nth-child(even) {
+  background-color: #0d64aa;
+  color: #fff;
+}
+
+.fn {
+  margin: 10px auto;
+  text-align: right;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn.danger {
+  background: #ff4b4b;
+  color: #fff;
+}
+.btn.danger:hover {
+  background: #b42a2a;
+}
+
+@media print {
+  .fn {
+    display: none;
+  }
+}/*# sourceMappingURL=rwd_print.css.map */

@@ -1,0 +1,22 @@
+@import 'reset_layout';
+
+.block {
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .block {
+        background-color: blue;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .block {
+        background-color: rgb(87, 198, 145);
+        color: #090707;
+    }
+}

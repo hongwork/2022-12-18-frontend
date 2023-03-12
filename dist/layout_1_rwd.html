@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page.</title>
-    <link rel="stylesheet" href="css/layout_1.css">
+    <link rel="stylesheet" href="css/layout_1_rwd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
@@ -21,13 +21,12 @@
             </div> -->
         <div class="container">
             <div class="header-content">
+                <input type="checkbox" id="mobile-switch">
                 <div>
                     <a href="layout_1.html">
                         <img src="images/logo.svg" alt="">
                     </a>
                 </div>
-
-
                 <!-- <div class="header2">
         <div class="container">
             <div>logo</div>
@@ -51,8 +50,9 @@
             </div>
         </div> -->
 
-                <div>
-                    <ul class="menu">
+                <!-- <div class="menu extend"> -->
+                <div class="menu popup">
+                    <ul>
                         <li>
                             <a href="#">
                                 <div class="en">About Us</div>
@@ -73,12 +73,18 @@
                         </li>
                     </ul>
                 </div>
+
+                <label class="mobile-icon" for="mobile-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
         </div>
     </div>
     <div class="join-form">
         <div class="container">
-            <div class="join-form-content">
+            <div class="join-form-content wow animate__animated animate__swing">
                 <div class="wrap">
                     <div class="left-side">
                         <h3 class="slogan">加入赫綵，人生精彩</h3>
@@ -108,8 +114,8 @@
             </div>
         </div>
     </div>
-    <div class="process-flow" id="courses-block">
-        <div class="process-wrap">
+    <div class="process-flow " id="courses-block">
+        <div class="process-wrap wow animate__animated animate__rubberBand">
             <h3 class="slogan">課程顧問</h3>
             <div class="flow">
                 <div class="flow-item">
@@ -133,7 +139,7 @@
                         <div>深度了解需求，給予最適合的建議</div>
                     </div>
                 </div>
-                <div class="flow-item wow animate__animated animate__rubberBand">
+                <div class="flow-item ">
                     <div class="flow-circle" style="background: yellow;"></div>
                     <div class="flow-text" style="background: green;">
                         <h5>需求訪談</h5>

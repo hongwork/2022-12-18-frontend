@@ -118,4 +118,64 @@ a {
 .form-control-item .form-control-append .button {
   height: 100%;
   display: inline-block;
-}/*# sourceMappingURL=reset_layout.css.map */
+}
+
+.product-block {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 300px;
+  min-height: 200px;
+  background: #dedede;
+  padding: 15px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+}
+.product .product-image {
+  width: 100%;
+  height: 200px;
+  background: #ff5858;
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.product .product-image .discount-bar {
+  width: 100%;
+  height: 30px;
+  background: red;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  position: absolute;
+  right: -105px;
+  top: 25px;
+}
+.product .product-image .product-image-wrap {
+  background-image: url(../images/dog.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+.product .product-image:hover .product-image-wrap {
+  transform: scale(1.5);
+}
+.product .product-image:hover .discount-bar {
+  background-color: aquamarine;
+  color: #ff5858;
+}
+.product .product-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=product_discount.css.map */
