@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.number-block {
+  margin-top: 10px;
+}
+.number-block input {
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fn {
+  text-align: right;
+}
+
+#response {
+  border: 1px solid #dedede;
+  padding: 20px;
+  margin-top: 20px;
+  display: none;
+}
+#response.active {
+  display: block;
+}
+#response.fail > span {
+  color: red;
+}
+#response > span {
+  font-size: 30px;
+  font-weight: 700;
+  color: blue;
+}/*# sourceMappingURL=js_number_to_level.css.map */
