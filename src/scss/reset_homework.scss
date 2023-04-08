@@ -12,4 +12,12 @@
     margin: auto;
 }
 
-// 用手機開live server window+R > cmd > ipconfig > Ipv4的數字轉貼
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: rgb(120, 36, 36);
+    text-decoration: none;
+}
