@@ -4,9 +4,9 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/dist/css"
+            "savePath": "/public/css"
         }
     ],
-    "liveServer.settings.root": "/dist",
+    "liveServer.settings.root": "/public",
     "liveServer.settings.CustomBrowser": "microsoft-edge"
 }
