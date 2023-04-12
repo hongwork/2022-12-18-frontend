@@ -132,3 +132,5 @@ createApp({
         })
     }
 }).mount('#app')
+
+// learn sweetalert
